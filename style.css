@@ -92,7 +92,7 @@ body {
     animation: float 10s infinite ease-in-out;
 }
 
-/* Position flowers in the corners as per the circles */
+/* Position flowers at the corners of the card */
 .flower-1 {
     top: -15px; /* Adjust flower position */
     left: -15px; /* Adjust flower position */
