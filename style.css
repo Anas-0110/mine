@@ -6,8 +6,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150vh; /* Adjusted height */
+    height: 100vh; /* Adjusted height */
     color: #333;
+    flex-direction: column; /* Add this line */
 }
 
 /* Card Styling */
@@ -24,6 +25,7 @@ body {
     border: 10px solid #f8c6d0;
     animation: fadeIn 1s ease-in-out;
     z-index: 1;
+    transform: translateY(-20%); /* Add this line */
 }
 
 /* Header */
