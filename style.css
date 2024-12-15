@@ -1,0 +1,184 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0); /* Pink gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    overflow: hidden;
+}
+
+/* Card Styling */
+.card {
+    width: 90%;
+    max-width: 500px;
+    background: #ffe6e9; /* Pink card background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    border: 5px solid #f8c6d0;
+    animation: fadeIn 1s ease-in-out;
+    z-index: 1;
+}
+
+/* Header */
+.header h1 {
+    color: #e57373;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: slideDown 1s ease-in-out;
+}
+
+/* Details */
+.details {
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.details h2 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.ampersand {
+    color: #e57373; /* Pink ampersand */
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
+.details p {
+    font-size: 1.1em;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    color: #888;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.footer .note {
+    font-style: italic;
+}
+
+/* Floral Decorations */
+.decorations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Flowers */
+.flower {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: float 6s infinite ease-in-out;
+}
+
+.flower-1 {
+    top: 30px; /* Adjust flower position */
+    left: 30px; /* Adjust flower position */
+    animation-delay: 0s;
+}
+
+.flower-2 {
+    bottom: 30px; /* Adjust flower position */
+    right: 30px; /* Adjust flower position */
+    animation-delay: 3s;
+}
+
+/* Petals */
+.petal {
+    position: absolute;
+    width: 25px; /* Adjust petal width */
+    height: 50px; /* Adjust petal height */
+    background: radial-gradient(circle, #ffc3a0, #ffafbd);
+    border-radius: 50%;
+    transform-origin: bottom center;
+}
+
+.petal-1 {
+    transform: rotate(0deg);
+}
+.petal-2 {
+    transform: rotate(72deg);
+}
+.petal-3 {
+    transform: rotate(144deg);
+}
+.petal-4 {
+    transform: rotate(216deg);
+}
+.petal-5 {
+    transform: rotate(288deg);
+}
+
+/* Flower Center */
+.center {
+    width: 20px;
+    height: 20px;
+    background: #e57373;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
