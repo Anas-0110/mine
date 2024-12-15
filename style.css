@@ -1,0 +1,109 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fce38a, #f38181);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    overflow: hidden;
+}
+
+.card {
+    width: 90%;
+    max-width: 500px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Header */
+.header h1 {
+    color: #f38181;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    animation: slideDown 1s ease-in-out;
+}
+
+/* Details */
+.details {
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.details h2 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.ampersand {
+    color: #f38181;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
+.details p {
+    font-size: 1.1em;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    color: #888;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.footer .note {
+    font-style: italic;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover Effect */
+.card:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}
