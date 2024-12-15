@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Adjusted height */
+    height: 150vh; /* Adjusted height */
     color: #333;
 }
 
