@@ -92,28 +92,28 @@ body {
     animation: float 10s infinite ease-in-out;
 }
 
-/* Position flowers in the corners, slightly centered */
+/* Position flowers at the specified locations */
 .flower-1 {
-    top: 15px; /* Adjust flower position */
-    left: 15px; /* Adjust flower position */
+    top: 10px; 
+    left: 10px;
     animation-delay: 0s;
 }
 
 .flower-2 {
-    top: 15px; /* Adjust flower position */
-    right: 15px; /* Adjust flower position */
+    top: 10px;
+    right: 10px;
     animation-delay: 3s;
 }
 
 .flower-3 {
-    bottom: 15px; /* Adjust flower position */
-    right: 15px; /* Adjust flower position */
+    bottom: 10px;
+    right: 10px;
     animation-delay: 3s;
 }
 
 .flower-4 {
-    bottom: 15px; /* Adjust flower position */
-    left: 15px; /* Adjust flower position */
+    bottom: 10px;
+    left: 10px;
     animation-delay: 3s;
 }
 
