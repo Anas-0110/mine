@@ -90,29 +90,32 @@ body {
     justify-content: center;
     align-items: center;
     animation: float 10s infinite ease-in-out;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to be fully centered */
 }
 
 .flower-1 {
-    top: 20px; /* Adjust flower position */
-    left: 20px; /* Adjust flower position */
+    top: calc(50% - 50px); /* Adjust flower position */
+    left: calc(50% - 50px); /* Adjust flower position */
     animation-delay: 0s;
 }
 
 .flower-2 {
-    bottom: 20px; /* Adjust flower position */
-    right: 20px; /* Adjust flower position */
+    bottom: calc(50% - 50px); /* Adjust flower position */
+    right: calc(50% - 50px); /* Adjust flower position */
     animation-delay: 3s;
 }
 
 .flower-3 {
-    top: 80px; /* Adjust flower position */
-    right: 20px; /* Adjust flower position */
+    top: calc(50% + 30px); /* Adjust flower position */
+    right: calc(50% - 50px); /* Adjust flower position */
     animation-delay: 3s;
 }
 
 .flower-4 {
-    bottom: 20px; /* Adjust flower position */
-    left: 20px; /* Adjust flower position */
+    bottom: calc(50% - 50px); /* Adjust flower position */
+    left: calc(50% + 30px); /* Adjust flower position */
     animation-delay: 3s;
 }
 
@@ -153,8 +156,8 @@ body {
     background: #e57373;
     border-radius: 50%;
     position: absolute;
-    top: 50%; /* Adjust to center */
-    left: 50%; /* Adjust to center */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%);
     z-index: 1;
 }
