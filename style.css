@@ -86,50 +86,48 @@ body {
     position: absolute;
     width: 80px;
     height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     animation: float 6s infinite ease-in-out;
 }
 
 .flower-1 {
-    top: 30px;
-    left: 30px;
+    top: 50px;
+    left: 50px;
     animation-delay: 0s;
 }
 
 .flower-2 {
-    bottom: 30px;
-    right: 30px;
+    bottom: 50px;
+    right: 50px;
     animation-delay: 3s;
 }
 
 /* Petals */
 .petal {
     position: absolute;
-    width: 30px;
-    height: 50px;
+    width: 40px;
+    height: 60px;
     background: radial-gradient(circle, #ffc3a0, #ffafbd);
     border-radius: 50%;
     transform-origin: bottom center;
 }
 
-.petal-1 {
-    transform: rotate(0deg) translate(10px, 10px);
-    animation: bloom 3s infinite ease-in-out;
+.petal:nth-child(1) {
+    transform: rotate(0deg);
 }
-.petal-2 {
-    transform: rotate(72deg) translate(10px, 10px);
-    animation: bloom 3s infinite ease-in-out;
+.petal:nth-child(2) {
+    transform: rotate(72deg);
 }
-.petal-3 {
-    transform: rotate(144deg) translate(10px, 10px);
-    animation: bloom 3s infinite ease-in-out;
+.petal:nth-child(3) {
+    transform: rotate(144deg);
 }
-.petal-4 {
-    transform: rotate(216deg) translate(10px, 10px);
-    animation: bloom 3s infinite ease-in-out;
+.petal:nth-child(4) {
+    transform: rotate(216deg);
 }
-.petal-5 {
-    transform: rotate(288deg) translate(10px, 10px);
-    animation: bloom 3s infinite ease-in-out;
+.petal:nth-child(5) {
+    transform: rotate(288deg);
 }
 
 /* Flower Center */
@@ -139,22 +137,7 @@ body {
     background: #e57373;
     border-radius: 50%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/* Decorative Ribbon */
-.ribbon {
-    position: absolute;
-    width: 300px;
-    height: 10px;
-    background: #ffc3a0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-5deg);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    animation: wave 2s infinite alternate ease-in-out;
+    z-index: 1;
 }
 
 /* Animations */
@@ -197,23 +180,5 @@ body {
     }
     50% {
         transform: translateY(-15px);
-    }
-}
-
-@keyframes bloom {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-}
-
-@keyframes wave {
-    0% {
-        transform: translate(-50%, -50%) rotate(-5deg);
-    }
-    100% {
-        transform: translate(-50%, -50%) rotate(5deg);
     }
 }
