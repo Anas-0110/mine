@@ -8,7 +8,6 @@ body {
     align-items: center;
     height: 100vh; /* Adjusted height */
     color: #333;
-    flex-direction: column; /* Add this line */
 }
 
 /* Card Styling */
@@ -25,7 +24,7 @@ body {
     border: 10px solid #f8c6d0;
     animation: fadeIn 1s ease-in-out;
     z-index: 1;
-    transform: translateY(-20%); /* Add this line */
+    margin: auto; /* Center the card */
 }
 
 /* Header */
@@ -154,7 +153,9 @@ body {
     background: #e57373;
     border-radius: 50%;
     position: absolute;
-    bottom: 5px; /* Adjusted to lower position */
+    top: 50%; /* Adjust to center */
+    left: 50%; /* Adjust to center */
+    transform: translate(-50%, -50%);
     z-index: 1;
 }
 
