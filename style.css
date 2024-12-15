@@ -92,28 +92,28 @@ body {
     animation: float 10s infinite ease-in-out;
 }
 
-/* Position flowers in the corners of the card */
+/* Position flowers in the corners, slightly centered */
 .flower-1 {
-    top: 0; 
-    left: 0;
+    top: 10px; /* Adjust flower position */
+    left: 10px; /* Adjust flower position */
     animation-delay: 0s;
 }
 
 .flower-2 {
-    top: 0;
-    right: 0;
+    top: 10px; /* Adjust flower position */
+    right: 10px; /* Adjust flower position */
     animation-delay: 3s;
 }
 
 .flower-3 {
-    bottom: 0;
-    right: 0;
+    bottom: 10px; /* Adjust flower position */
+    right: 10px; /* Adjust flower position */
     animation-delay: 3s;
 }
 
 .flower-4 {
-    bottom: 0;
-    left: 0;
+    bottom: 10px; /* Adjust flower position */
+    left: 10px; /* Adjust flower position */
     animation-delay: 3s;
 }
 
@@ -124,7 +124,7 @@ body {
     height: 30px; /* Adjust petal height */
     background: radial-gradient(circle, #ff6f91, #ff3d68); /* More colorful flower petals */
     border-radius: 50%;
-    transform-origin: bottom center;
+    transform-origin: center; /* Adjust to center origin */
 }
 
 .petal-1 {
