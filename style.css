@@ -145,13 +145,13 @@ body {
 
 /* Flower Center */
 .center {
-    width: 15px;
-    height: 15px;
+    width: 50px;
+    height: 50px;
     background: #e57373;
     border-radius: 50%;
     position: absolute;
     bottom: 15px; /* Adjusted to lower position */
-    z-index: 1;
+    z-index: 2;
 }
 
 /* Animations */
