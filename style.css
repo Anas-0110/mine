@@ -1,0 +1,45 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    width: 90%;
+    max-width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.header h1 {
+    color: #d63384;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.details {
+    margin: 20px 0;
+}
+
+.details h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #343a40;
+}
+
+.details p {
+    font-size: 1em;
+    color: #495057;
+}
+
+.footer {
+    margin-top: 20px;
+    color: #868e96;
+}
