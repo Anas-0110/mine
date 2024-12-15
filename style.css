@@ -137,6 +137,7 @@ body {
     background: #e57373;
     border-radius: 50%;
     position: absolute;
+    bottom: 10px; /* Adjusted to lower position */
     z-index: 1;
 }
 
