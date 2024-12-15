@@ -108,9 +108,9 @@ body {
 .petal {
     position: absolute;
     width: 30px; /* Adjust petal width */
-    height: 60px; /* Adjust petal height */
+    height: 30px; /* Adjust petal height */
     background: radial-gradient(circle, #ff6f91, #ff3d68); /* More colorful flower petals */
-    border-radius: 70%;
+    border-radius: 50%;
     transform-origin: bottom center;
 }
 
@@ -138,7 +138,7 @@ body {
     border-radius: 50%;
     position: absolute;
     bottom: 5px; /* Adjusted to lower position */
-    z-index: 0;
+    z-index: 1;
 }
 
 /* Animations */
